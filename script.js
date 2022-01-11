@@ -21,32 +21,29 @@ let navBar = document.querySelector(".navbar");
 let menuBtn = document.querySelector(".menu-btn");
 let cancelBtn = document.querySelector(".cancel-btn");
 
-  menuBtn.onclick = function() {
-      console.log("click menu");
+menuBtn.onclick = function() {
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
   menuBtn.style.pointerEvents = "none";
-  body.style.overflow = "hidden";
+  body.style.overflowX = "hidden";
   scrollBtn.style.pointerEvents = "none";
-  console.log("end");
 }
 
 cancelBtn.onclick = function() {
   navBar.classList.remove("active");
   menuBtn.style.opacity = "1";
   menuBtn.style.pointerEvents = "auto";
-  body.style.overflow = "auto";
+  body.style.overflowX = "auto";
   scrollBtn.style.pointerEvents = "auto";
 }
 
-
-// Side Navigation Bar Close while we click on Navigation Link
+// Side Navigation Bar Close While We click On Navigation Links
 
 let navLinks = document.querySelectorAll(".menu li a");
-for (var i= 0; i < navLinks.length; i++){
-    navLinks[i],addEventListener("click", function(){
-        navBar.classList.remove("active");
-        menuBtn.style.opacity = "1";
-        menuBtn.style.pointerEvents = "auto";
-    })
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click" , function() {
+    navBar.classList.remove("active");
+    menuBtn.style.opacity = "1";
+    menuBtn.style.pointerEvents = "auto";
+  });
 }
