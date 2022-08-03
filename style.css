@@ -293,10 +293,11 @@ section .button button:hover {
   border:2px solid red;
   float:auto;
   width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+  margin: 10px 10px;
+  padding:2px;
 }
 .skills-details .boxes .topic {
-  font-size: 30px;
+  font-size: 1.2rem;
   color: var(--primary-color);
 }
 /* contact me css */
