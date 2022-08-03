@@ -290,6 +290,8 @@ section .button button:hover {
   justify-content: space-between;
 }
 .skills-details .box {
+  border:2px solid red;
+  float:auto;
   width: calc(100% / 2 - 20px);
   margin: 20px 0;
 }
