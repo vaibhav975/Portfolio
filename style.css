@@ -178,6 +178,16 @@ nav.sticky .menu-btn {
   background-color: var(--white-color);
   color: var(--primary-color);
 }
+#pic1 img{
+  width: 90px !important;
+  height: 90px;
+  float: right;
+  margin-right: 44.5%;
+  margin-top: -7%;
+}
+/* #pic{
+  float: right;
+} */
 
 /* about section styling */
 section {
@@ -295,6 +305,7 @@ section .button button:hover {
   width: calc(100% / 2 - 20px);
   margin: 10px 10px;
   padding:2px;
+  box-shadow: 1px 1px 1px;
 }
 .skills-details .boxes .topic {
   font-size: 1.2rem;
@@ -380,6 +391,9 @@ footer .text span a:hover {
   nav .navbar {
     width: 90%;
   }
+  .box .topic{
+    font-size: 4.2vw !important;
+  }
   nav .navbar .menu {
     position: fixed;
     left: -100%;
@@ -442,6 +456,9 @@ footer .text span a:hover {
 
   .contact .text {
     width: 100%;
+  }
+  #pic1 img{
+    display: none;
   }
 }
 
